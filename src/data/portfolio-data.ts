@@ -2,10 +2,10 @@ export const personalInfo = {
   name: "Asifa Siraj",
   title: "Frontend Developer & Creative Technologist",
   tagline: "Crafting immersive digital experiences with code and creativity",
-  email: "contact@asifasiraj.com",
+  email: "as1615533@gmail.com",
   location: "Karachi, Pakistan",
   github: "https://github.com/AsifaSiraj",
-  linkedin: "https://linkedin.com/in/asifasiraj",
+  linkedin: "https://www.linkedin.com/in/asifa-siraj-7baa40272/",
   bio: `I'm a passionate Frontend Developer and Computer Science student at NED University, Karachi. I specialize in building interactive, accessible, and visually stunning web experiences. With expertise spanning Three.js, React, and modern web technologies, I bring ideas to life through code. My journey includes VR development, digital accessibility, and creative frontend projects that push the boundaries of what's possible on the web.`,
 };
 
