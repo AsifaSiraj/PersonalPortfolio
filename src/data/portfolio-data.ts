@@ -308,6 +308,7 @@ export const education: Education[] = [
     degree: "Bachelor of Science (BS)",
     field: "Computer Science and Information Technology",
     period: "Sep 2022 \u2013 Sep 2027",
+    grade: "A+",
   },
   {
     id: 2,

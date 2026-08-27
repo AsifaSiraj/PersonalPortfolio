@@ -14,7 +14,7 @@ const fadeUp = {
 
 export default function About() {
   return (
-    <section id="about" className="relative min-h-screen flex items-center py-24">
+    <section id="about" className="relative min-h-screen flex items-start pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <motion.div
           className="grid md:grid-cols-2 gap-12 items-center"
