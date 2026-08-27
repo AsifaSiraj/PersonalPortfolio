@@ -46,11 +46,12 @@ export default function Education() {
               transition={{ delay: i * 0.15 }}
               whileHover={{ y: -3 }}
             >
-              {i === 0 && (
+              {/* for current education */}
+              {/* {i === 0 && (
                 <div className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-[#6c63ff] text-[10px] font-bold text-white">
                   CURRENT
                 </div>
-              )}
+              )} */}
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6c63ff]/20 to-[#00d4ff]/20 flex items-center justify-center mb-4">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c63ff" strokeWidth="1.5">
                   <path d="M22 10v6M2 10l10-5 10 5-10 5z" />

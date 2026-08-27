@@ -152,16 +152,30 @@ export default function Projects() {
                   </div>
 
                   {/* GitHub link hint */}
-                  <motion.div
-                    className="mt-4 pt-3 border-t border-white/5 flex items-center justify-between"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: hoveredId === project.id ? 1 : 0.4 }}
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="mt-4 pt-3 border-t border-white/5 flex items-center justify-between group cursor-pointer"
                   >
-                    <span className="text-xs text-white/30">View Source</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white/30">
-                      <path d="M7 17L17 7" /><path d="M7 7h10v10" />
+                    <span className="text-xs text-white/30 group-hover:text-white/70 transition-colors">
+                      View Source
+                    </span>
+
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-white/30 group-hover:text-white transition-colors"
+                    >
+                      <path d="M7 17L17 7" />
+                      <path d="M7 7h10v10" />
                     </svg>
-                  </motion.div>
+                  </a>
                 </div>
               </motion.div>
             ))}

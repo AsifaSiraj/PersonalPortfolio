@@ -6,7 +6,7 @@ export const personalInfo = {
   location: "Karachi, Pakistan",
   github: "https://github.com/AsifaSiraj",
   linkedin: "https://www.linkedin.com/in/asifa-siraj-7baa40272/",
-  bio: `I'm a passionate Frontend Developer and Computer Science student at NED University, Karachi. I specialize in building interactive, accessible, and visually stunning web experiences. With expertise spanning Three.js, React, and modern web technologies, I bring ideas to life through code. My journey includes VR development, digital accessibility, and creative frontend projects that push the boundaries of what's possible on the web.`,
+  bio: `I'm a passionate Frontend Developer and Computer Science student at NED University, Karachi. I specialize in building interactive, accessible, and visually stunning web experiences. With expertise spanning React, and modern web technologies, I bring ideas to life through code. My journey includes VR development, digital accessibility, and creative frontend projects that push the boundaries of what's possible on the web.`,
 };
 
 export interface Experience {
@@ -23,8 +23,35 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
-  {
+    {
     id: 1,
+    role: "Digital IC Design & Verification Trainee",
+    company: "NED University of Engineering & Technology",
+    type: "Training Program",
+    period: "2025 - Present",
+    duration: "Ongoing",
+    location: "Karachi, Pakistan",
+    mode: "On-site",
+    description:
+      "Undergoing hands-on training in Digital IC Design and Verification with a focus on RTL design, SystemVerilog, FPGA development, RISC-V architecture, AMBA protocols, assertions, and functional verification. Developing and verifying digital hardware designs using industry-standard EDA tools including QuestaSim, ModelSim, and Intel Quartus Prime.",
+    skills: [
+      "Digital IC Design",
+      "RTL Design",
+      "SystemVerilog",
+      "Verilog",
+      "Functional Verification",
+      "UVM",
+      "RISC-V",
+      "AMBA Protocols",
+      "Assertions",
+      "FPGA",
+      "QuestaSim",
+      "ModelSim",
+      "Quartus Prime"
+    ],
+  },
+  {
+    id: 2,
     role: "Virtual Office Assistant",
     company: "DesertBIM",
     type: "Freelance",
@@ -37,7 +64,7 @@ export const experiences: Experience[] = [
     skills: ["Team Coordination", "Team Management", "Time Management", "Virtual Assistance", "Documentation", "Research Skills", "Communication"],
   },
   {
-    id: 2,
+    id: 3,
     role: "Digital Accessibility Intern",
     company: "Deserts Digital O\u00dc",
     type: "Internship",
@@ -50,7 +77,7 @@ export const experiences: Experience[] = [
     skills: ["SEO", "UX", "Accessible PDF Creation", "PDF Accessibility", "Web Development"],
   },
   {
-    id: 3,
+    id: 4,
     role: "Summer Intern",
     company: "CodeAlpha",
     type: "Internship",
@@ -63,7 +90,7 @@ export const experiences: Experience[] = [
     skills: ["React", "Angular", "Vue.js", "HTML", "CSS", "JavaScript"],
   },
   {
-    id: 4,
+    id: 5,
     role: "IT Support Staff",
     company: "Karachi Development Authority (KDA)",
     type: "Internship",
@@ -76,7 +103,7 @@ export const experiences: Experience[] = [
     skills: ["IT Infrastructure", "IT Service Management", "Technical Support"],
   },
   {
-    id: 5,
+    id: 6,
     role: "Frontend Web Developer",
     company: "NED University",
     type: "Internship",
@@ -89,7 +116,7 @@ export const experiences: Experience[] = [
     skills: ["Front-End Development", "React", "JavaScript"],
   },
   {
-    id: 6,
+    id: 7,
     role: "Frontend Developer",
     company: "Interns School",
     type: "Internship",
@@ -102,7 +129,7 @@ export const experiences: Experience[] = [
     skills: ["Front-End Development", "WordPress", "jQuery"],
   },
   {
-    id: 7,
+    id: 8,
     role: "VR Development Intern",
     company: "NED University VR Center",
     type: "Apprenticeship",
@@ -128,10 +155,22 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    name: "ReqMind AI",
-    description: "AI-powered requirement analysis system built for HEC Generative AI Training Hackathon. Uses LLMs to extract functional and non-functional requirements.",
-    tech: ["Python", "AI/ML", "NLP"],
-    github: "https://github.com/AsifaSiraj/ReqMind-AI",
+    name: "Pointrix",
+    description:
+      "Real-time university bus tracking and management application developed as a Final Year Design Project at NED University. Contributed to the Flutter-based Student Panel by implementing navigation and routing and integrating frontend components with backend APIs for real-time data communication and interaction.",
+    tech: [
+      "Flutter",
+      "Dart",
+      "Riverpod",
+      "ASP.NET Core",
+      "C#",
+      "REST APIs",
+      "SignalR",
+      "MySQL",
+      "Google Maps API",
+      "GPS"
+    ],
+    github: "",
     featured: true,
   },
   {
@@ -144,22 +183,27 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    name: "Sales Dashboard",
-    description: "Interactive sales data visualization dashboard with real-time analytics and reporting features.",
-    tech: ["TypeScript", "Data Visualization"],
-    github: "https://github.com/AsifaSiraj/sales-dashboard",
+    name: "Hospital Recommendation Chatbot",
+    description:
+      "NLP-powered hospital recommendation chatbot that helps users find suitable hospitals based on medical specialization, location, and budget. Supports natural language and voice queries, using NLP processing, fuzzy matching, multi-criteria filtering, speech recognition, and text-to-speech for an interactive user experience.",
+    tech: [
+      "Python",
+      "Flask",
+      "React",
+      "NLP",
+      "NLTK",
+      "FuzzyWuzzy",
+      "Transformers",
+      "Wav2Vec 2.0",
+      "Beautiful Soup",
+      "gTTS",
+      "pyttsx3"
+    ],
+    github: "https://github.com/AsifaSiraj/Hospital-Recommendation-ChatBot",
     featured: true,
   },
   {
     id: 4,
-    name: "DocSmith",
-    description: "Document processing and management tool with intelligent features.",
-    tech: ["TypeScript", "Web Development"],
-    github: "https://github.com/AsifaSiraj/DocSmith",
-    featured: true,
-  },
-  {
-    id: 5,
     name: "Library Management System",
     description: "Full-stack library management system with JSX, featuring book tracking, user management, and lending workflows.",
     tech: ["React.js", "Express.js", "MySQL"],
@@ -167,7 +211,31 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: 5,
+    name: "ReqMind AI",
+    description: "AI-powered requirement analysis system built for HEC Generative AI Training Hackathon. Uses LLMs to extract functional and non-functional requirements.",
+    tech: ["Python", "AI/ML", "NLP"],
+    github: "https://github.com/AsifaSiraj/ReqMind-AI",
+    featured: true,
+  },
+  {
     id: 6,
+    name: "Sales Dashboard",
+    description: "Interactive sales data visualization dashboard with real-time analytics and reporting features.",
+    tech: ["TypeScript", "Data Visualization"],
+    github: "https://github.com/AsifaSiraj/sales-dashboard",
+    featured: true,
+  },
+  {
+    id: 7,
+    name: "DocSmith",
+    description: "Document processing and management tool with intelligent features.",
+    tech: ["TypeScript", "Web Development"],
+    github: "https://github.com/AsifaSiraj/DocSmith",
+    featured: true,
+  },
+  {
+    id: 8,
     name: "COVID-19 Testing App",
     description: "Web application for COVID-19 testing with responsive design and user-friendly interface.",
     tech: ["HTML5", "CSS", "JavaScript"],
@@ -175,7 +243,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 7,
+    id: 9,
     name: "Hospital Management System",
     description: "Object-oriented hospital management system built with C++ for patient records, appointments, and billing.",
     tech: ["C++", "OOP"],
@@ -183,7 +251,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 8,
+    id: 10,
     name: "Unity Forest Scene",
     description: "Immersive 3D forest environment built with Unity using Universal Rendering Pipeline.",
     tech: ["Unity", "C#", "URP"],
@@ -191,7 +259,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 9,
+    id: 11,
     name: "Excavator VR",
     description: "Virtual Reality excavator simulation project with realistic controls and 3D modeling.",
     tech: ["Unity", "VR", "Blender"],
@@ -199,7 +267,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 10,
+    id: 12,
     name: "Tic Tac Toe AI",
     description: "Python-based Tic-Tac-Toe game showcasing AI through game theory algorithms.",
     tech: ["Python", "AI", "Game Theory"],
@@ -207,7 +275,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 11,
+    id: 13,
     name: "Path Game",
     description: "Interactive path-finding game built with HTML, CSS, and JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
@@ -215,7 +283,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 12,
+    id: 14,
     name: "Financial Tracking Website",
     description: "Financial tracking website implementing greedy and dynamic programming algorithms.",
     tech: ["JavaScript", "Algorithms"],
@@ -287,14 +355,13 @@ export const skillCategories = [
   {
     name: "Frontend",
     skills: [
-      { name: "React.js", level: 85 },
+      { name: "React.js", level: 75 },
       { name: "JavaScript", level: 90 },
-      { name: "TypeScript", level: 75 },
+      { name: "TypeScript", level: 60 },
       { name: "HTML/CSS", level: 95 },
-      { name: "Next.js", level: 70 },
+      { name: "Next.js", level: 60 },
       { name: "Tailwind CSS", level: 80 },
-      { name: "Three.js", level: 65 },
-      { name: "WordPress", level: 70 },
+      { name: "WordPress", level: 40 },
       { name: "jQuery", level: 60 },
     ],
   },
@@ -305,15 +372,15 @@ export const skillCategories = [
       { name: "C++", level: 65 },
       { name: "C", level: 60 },
       { name: "SQL", level: 70 },
-      { name: "Express.js", level: 65 },
+      { name: "Express.js", level: 40 },
       { name: "PHP", level: 55 },
     ],
   },
   {
     name: "Creative & 3D",
     skills: [
-      { name: "Unity", level: 70 },
-      { name: "Blender", level: 60 },
+      { name: "Unity", level: 65 },
+      { name: "Blender", level: 40 },
       { name: "VR Development", level: 65 },
       { name: "Digital Marketing", level: 60 },
     ],
