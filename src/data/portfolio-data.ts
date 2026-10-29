@@ -28,8 +28,8 @@ export const experiences: Experience[] = [
     role: "Digital IC Design & Verification Trainee",
     company: "NED University of Engineering & Technology",
     type: "Training Program",
-    period: "2025 - Present",
-    duration: "Ongoing",
+    period: "May 2026 - Sep 2026",
+    duration: "5 mos",
     location: "Karachi, Pakistan",
     mode: "On-site",
     description:
@@ -290,6 +290,30 @@ export const projects: Project[] = [
     github: "https://github.com/AsifaSiraj/Financial-Tracking-Website",
     featured: false,
   },
+  
+  {
+    id: 15,
+    name: "RISC-V SoC with ECC-Protected Memory",
+    description:
+      "Designed and verified a 32-bit RISC-V System-on-Chip (SoC) with ECC-protected memory using SystemVerilog and UVM. Developed verification environments to test memory and peripheral functionality, implemented fault injection mechanisms, and performed simulation, debugging, and waveform analysis using QuestaSim.",
+    tech: [
+      "SystemVerilog",
+      "UVM",
+      "RISC-V",
+      "ECC",
+      "QuestaSim",
+      "Functional Verification",
+      "Fault Injection",
+      "Memory Verification",
+      "Peripheral Verification",
+      "RTL Design",
+      "Assertions",
+      "Functional Coverage"
+    ],
+    github: "",
+    featured: true,
+  },
+
 ];
 
 export interface Education {
